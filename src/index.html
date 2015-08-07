@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Vita &raquo; I love you!</title>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./dep/jquery.gridster.min.css">
+		<link rel="stylesheet" type="text/css" href="./dep/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<!-- CSS -->
+	</head>
+	<body class="container">
+		<div id="cards">
+			<div class="row">
+				<audio controls loop class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+					<source src="./songs/canyoufeel.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-xl-12 col-xs-12 text-center">
+					<h1>60 Reasons Why I Love You!</h1>
+				</div>
+			</div>
+
+			<div class="gridster row">
+				<ul></ul>
+			</div>
+		</div>
+
+		<div id="loading" class="text-center">
+			<hr>
+			<h1>Loading ... <3 </h1>
+		</div>
+
+		<hr>
+		
+		<div class="row">
+			<div class="col-md-12 col-xl-12 col-xs-12 text-center">
+				<h1>I love you more than I love anything else, I love you more than anyone could ever dare to say!</h1>
+				<h1>I was an idiot, I still am, but without you I can't feel happy anymore.</h1>
+				<h1>I hate disappointing you, I want to do better for you.</h1>
+			</div>
+		</div>
+		<div class="row text-center">
+			<video controls>
+				<source src="./songs/Evanescence-Forgiveme.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video> 
+			<!-- <iframe width="420" height="315" src="http://www.youtube.com/v/bt42hh6lce8"></iframe> -->
+
+				<h1>Please accept this as an apology, I only want the best for you!</h1>
+		</div>
+		<!-- JS -->
+		<script type="text/javascript">
+			window.$ = window.jQuery = require('./dep/jquery.min.js');
+		</script>
+		<script type="text/javascript" src="./dep/jquery.min.js"></script>
+		<script type="text/javascript" src="./dep/jquery.gridster.min.js"charset="utf-8"></script>
+		<script type="text/javascript" src="./dep/bootstrap.min.js"></script>
+		<script type="text/javascript" src="classes.js"></script>
+		<script type="text/javascript" src="scroll.js"></script>
+
+		<script type="text/javascript" id="code">
+			var gridster;
+			alert('Vita this is my apology attempt, I love you!\n[If not the whole text is showing, then hover over the cards]');
+			$(function(){
+
+				gridster = $(".gridster > ul").gridster({
+					widget_margins: [5, 5],
+					widget_base_dimensions: [100, 55]
+				}).data('gridster');
+
+				var widgets = new Widgets([2,4]);
+						widgets.process([
+							'I love how after a difficult day, you always put a smile on my face.',
+							'I love the way you always push me to be better!',
+							'I love how you are always there for me.',
+							'I love how you are not afraid to voice yourself to me.',
+							'I love how you can actually get me to dress well.',
+							'I love our similarities!',
+							'I love our differences, because that\'s what makes us perfect!',
+							'I love that you understand me better than I do myself.',
+							'I love how beautiful you are!',
+							'I love your kisses!',
+							'I love our breakfast creations!',
+							'I love our dinner and lunch creations!',
+							'I love how you can always cheer me up when I am down.',
+							'I love the time we spend together.',
+							'I love that we have similar goals.',
+							'I love how caring you are!',
+							'I love that you are the best!',
+							'I love that together we are the best of friends!',
+							'I love you because you are my birdy.',
+							'I love you because you are my cutie!',
+							'I love you because you are my sweet hot red delicious onion!',
+							'I love hearing your tales of nightly adventures!',
+							'I love spending time with you doing absolutely nothing!',
+							'I love that I have the best person besides!',
+							'I love your organization, and how you strive to make me more organize!',
+							'I love making plans with you, even if I suck and is really bad at upholding them.',
+							'I love that you listen to me, even when I am being dumb or hurtful.',
+							'I love looking at you, the real you, and being besides you!',
+							'I love your nicknames for me!',
+							'I love all your cards and your gifts!',
+							'I love that you know what you want and always do what you can to get it!',
+							'I love your determination, and individual stregnth!',
+							'I love that you are a very strong and loving person!',
+							'I love kissing you.',
+							'I love the memories we make.',
+							'I love the memories we are planning to make!',
+							'I love the fact that I can see a real future with you!',
+							'I love our photoshoots and the creative photos that come out of it!',
+							'I love every photo of us!',
+							'I love our serious conversations, and that even when they get heated, we come out stronger from them!',
+							'I love that you have shown me what a real connection with someone is.',
+							'I love that I can share any thought with you!',
+							'I love our brushy-brushy dates!',
+							'I love how much you care for my health!',
+							'I love how much you nugg me to eat better!',
+							'I love helping you get outside your comfort zone, and helping you discover yourself.',
+							'I love making you feel confortable and loved!',
+							'I love how your family accepted me, and how they made someone as amazing as you!',
+							'I love the trust that you put in me. Morever I love that I can trust you 100% with anything! (yes its 100%)',
+							'I love how much you care for me!',
+							'I love how long and amazing you make my mornings!',
+							'I love that we trust each other so much we actually listen to the deep analysis that we have of one another!',
+							'I love your disney-obssession! Enjoy the song playing :3',
+							'I love that you will probably judge my spelling on every one of these.',
+							'I love adding things to our to-do list.',
+							'I love hearing about your dreams!',
+							'I love that you accept me as who I am, even with all my madness!',
+							'I love you because you really care about me.',
+							'I love you because even when you get mad at me, its only because I was not as good as you know I could be!',
+							'I love you because even in our most heated fights, I know that we always will find a way to get back!'
+
+						]);
+
+				$.each(widgets.widgets(), function(i, widget){
+					gridster.add_widget.apply(gridster, widget)
+				});
+
+				gridster.$el
+					.on('mouseenter', '> li', function() {
+						gridster.resize_widget($(this), widgets.wsizes[0] + 1, widgets.wsizes[1] + 1);
+					})
+					.on('mouseleave', '> li', function() {
+						gridster.resize_widget($(this), widgets.wsizes[0], widgets.wsizes[1]);
+					});
+				
+				window.scrollTo(0,25);
+				$('#loading').hide();
+			});
+		</script>
+		<!-- JS -->
+	</body>
+</html>

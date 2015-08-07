@@ -1,0 +1,70 @@
+/*-----------------------------------------*/
+/*	Background
+/*-----------------------------------------*/
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	background: rgba(179, 27, 22, 0.85);
+	background-image: url('./img/hearts.jpg');
+}
+
+h1 {
+	color: white;
+}
+
+/*-----------------------------------------*/
+/*	Gridster
+/*-----------------------------------------*/
+.gridster * {
+	margin:0;
+	padding:0;
+}
+
+.gridster li {
+	border: 1px solid #000;
+	padding: 0% 2% 2%;
+	border-radius: 15px;
+	background: white;
+}
+
+
+.gridster {
+	margin: 0 auto;
+
+	-webkit-transition: opacity .6s;
+	-moz-transition: opacity .6s;
+	-o-transition: opacity .6s;
+	-ms-transition: opacity .6s;
+	transition: opacity .6s;
+}
+
+.gridster .preview-holder {
+	border: none!important;
+	background: red!important;
+}
+
+/*-----------------------------------------*/
+/*	Cards
+/*-----------------------------------------*/
+.outer-card {
+	height: 80%;
+	cursor: pointer;
+}
+.inside-card {
+	height: 100%;
+	font-size: 1.5em;
+	padding: 10% 2.5%;
+	border: 1px solid rgba(0, 0, 0, 0.37);
+	background: #FFA7C0;
+	overflow: hidden;
+}
+
+/*Loading*/
+
+#loading {
+	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	font-size: 13px;
+}
