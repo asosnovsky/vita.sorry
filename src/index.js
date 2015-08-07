@@ -4,9 +4,7 @@ var app 			= require('app'),
 
 /*On ready start*/
 app.on('ready', function () {
-	var atomScreen 		= require('screen'),
-		wndSizes = [atomScreen.getPrimaryDisplay().size.height*0.75];
-		wndSizes[1] = wndSizes[0]*0.75
+	var atomScreen 		= require('screen');
 
 	var wnd = new browserWindow({
 		width: atomScreen.getPrimaryDisplay().size.width,

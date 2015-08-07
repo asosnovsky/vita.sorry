@@ -1,10 +1,5 @@
 {
   "name": "vita.sorry",
-  "description":"Vita Sorry",  
-  "version": "2.0.0",
-  "scripts": {
-    "start": "electron ."
-  },
-  "author": "Ariel Sosnovsky",
-  "license": "ISC"
+  "productName": "Vita Sorry",
+  "main": "index.js"
 }

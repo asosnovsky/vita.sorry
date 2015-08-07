@@ -1,6 +1,6 @@
 {
   "name": "vita.sorry",
-  "description":"Vita Sorry",  
+  "description": "Vita Sorry",
   "version": "2.0.0",
   "scripts": {
     "start": "electron ./src"
@@ -9,8 +9,11 @@
   "license": "ISC",
   "devDependencies": {
     "electron-prebuilt": "^0.30.1",
+    "electron-windows-installer": "^1.1.0",
     "grunt": "^0.4.5",
     "grunt-electron": "^2.0.0",
+    "grunt-electron-installer": "^0.37.0",
+    "grunt-electron-windows-installer": "0.0.1",
     "load-grunt-tasks": "^3.2.0"
   }
 }
